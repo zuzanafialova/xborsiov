@@ -5,9 +5,72 @@ html, body {
 	margin: 0;
 	line-height: 1.5rem;
 	font-size: 15px;
+	font-family: Arial;
 }
 * {
 	box-sizing: border-box;
+}
+
+a {
+	color: #7238da;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #ffffff;
+	background: #7238da;
+}
+
+
+h1 {
+	line-height: 150%;
+	font-size: 2rem;
+	padding: 0;
+	margin: 0 auto 1rem;
+	max-width: 35rem;
+}
+
+h2 {
+	line-height: 150%;
+	font-size: 1.5rem;
+	padding: 0;
+	margin: 0 auto 0.7rem;
+	max-width: 35rem;
+}
+
+p {
+	line-height: 150%;
+	font-size: 1rem;
+	padding: 0;
+	margin: 0 auto 1.5rem;
+	max-width: 35rem;
+
+}
+
+p.intro {
+	font-style: italic;
+}
+
+p.tip {
+	background: #7238da50;
+	border-radius: 0.5rem;
+	padding: 1rem;
+	max-width: 37rem;
+}
+
+p.image-desc {
+	font-style: italic;
+	font-size: 0.9rem;
+	line-height: 120%;
+	margin-bottom: 2rem;
+	text-align: center;
+}
+
+img {
+	display: block;
+	margin: 0 auto 0.5rem;
+	max-width: 40rem;
+	width: 100%;
 }
 
 .header {
@@ -15,6 +78,7 @@ html, body {
 	gap: 1rem;
 	padding: 0.5rem 0.5rem 0;
 	grid-template-columns: 1fr;
+	align-items: baseline;
 }
 
 	.header .block {
@@ -22,20 +86,35 @@ html, body {
 	}
 
 	.logo {
-		background: #00aa0033;
+
 	}
 
 	.header .contact {
-		background: #ad21db55;
+
 	}
 
 	.menu-toggle {
-		background: #11111155;
+
 	}
 
 	.menu {
-		background: #1133fa55;
 		display: none;
+	}
+
+	.menu a.link {
+		padding: 1rem;
+		margin: 0 0 0.5rem;
+		line-height: 1rem;
+		display: block;
+		background: #3d8ef030;
+		border-radius: 0.5rem;
+		color: #333333;
+		text-decoration: none;
+		text-align: center;
+	}
+
+	.menu a.link:hover {
+		background: #3d8ef0;
 	}
 
 	.menu.show {
@@ -50,7 +129,14 @@ html, body {
 
 	.menu {
 		grid-column: 1/4;
+		justify-content: space-around;
 	}
+
+	.menu.show {
+		display: flex;
+	}
+
+
 }
 
 @media (min-width: 75rem) {
@@ -61,7 +147,13 @@ html, body {
 	.menu {
 		grid-column: 2/3;
 		grid-row: 1/2;
-		display: block;
+		display: flex;
+		/*justify-content: center;*/
+		gap: 1rem;
+	}
+
+	.menu a.link {
+		flex-grow: 1;
 	}
 
 	.header .contact {
@@ -81,17 +173,26 @@ html, body {
 }
 
 	.layout .block {
-		padding: 0.5rem;
 
 	}
 
-	.sidebar {
-		background: #11111155;
+	.layout .sidebar {
+		border-bottom: 1px solid #00000088;
 	}
 
 	.content {
-		background: #ffff0055;
+
 	}
+
+		.content-header {
+			position: sticky;
+			top: -0.01rem;
+			background: #ffffff;
+			border-bottom: 1px solid #333333;
+			padding-top: 1rem;
+			max-width: 45rem;
+			margin: 0 auto 2rem;
+		}
 
 @media (min-width: 45rem) {
 	.layout {
@@ -103,10 +204,21 @@ html, body {
 	.layout {
 		grid-template-columns: 25rem 1fr;
 	}
+		.layout .sidebar {
+			border-right: 1px solid #00000088;
+			border-bottom: none;
+
+		}
+			.sidebar-sticker {
+				position: sticky;
+				top: 0;
+				padding: 1rem;
+			}
+
 }
 
 .footer {
-	height: 50vw;
+	height: 120vh;
 	background: #22222233;
 
 }
