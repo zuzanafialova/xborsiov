@@ -79,6 +79,9 @@ img {
 	padding: 0.5rem 0.5rem 0;
 	grid-template-columns: 1fr;
 	align-items: baseline;
+	background: #ffffff;
+	min-height: 5rem;
+	z-index: 1000;
 }
 
 	.header .block {
@@ -125,6 +128,8 @@ img {
 	.header {
 		grid-template-columns: auto 1fr auto;
 		padding: 2rem 2rem 0;
+		position: sticky;
+		top: -2.5rem;
 	}
 
 	.menu {
@@ -198,6 +203,10 @@ img {
 	.layout {
 		padding: 2rem;
 	}
+
+	.content-header {
+		top: 2.5rem;
+	}
 }
 
 @media (min-width: 75rem) {
@@ -211,10 +220,12 @@ img {
 		}
 			.sidebar-sticker {
 				position: sticky;
-				top: 0;
+				top: 3rem;
 				padding: 1rem;
 			}
-
+	.content-header {
+		top: 3rem;
+	}
 }
 
 .footer {
