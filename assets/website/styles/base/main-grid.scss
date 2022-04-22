@@ -1,0 +1,13 @@
+.main-grid {
+  display: grid;
+  grid-template-columns: 30rem 4fr;
+  grid-template-rows: auto;
+
+  .side-bar {
+    grid-column: 1/1;
+    background: #008a00;
+  }
+  .content{
+    background: #AAAAAA;
+  }
+}

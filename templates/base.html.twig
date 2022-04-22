@@ -19,42 +19,27 @@
     {% endblock %}
 </head>
 <body>
-    <header>
-        {% block header %}
-            <nav>
-                <ul>
-                    <li>
-                        <a href="{{ sulu_content_root_path() }}">Homepage</a>
-                    </li>
+    <div class="header">
+        <nav>
+            <div class="logo">LOGO</div>
+            <div class="menu">
+                <a href="">Home</a>
+                <a href="">GIS guides</a>
+                <a href="">Contact</a>
+            </div>
+            <div class="phone">111222333</div>
+            <div class="menu-toggle">M</div>
+        </nav>
+    </div>
+    <div class="main-grid">
+        <div class="side-bar">Side bar</div>
+        <div class="content">Content</div>
+    </div>
+    <div class="footer">Footer</div>
 
-                    {% for item in sulu_navigation_root_tree('main') %}
-                        <li>
-                            <a href="{{ sulu_content_path(item.url, item.webspaceKey) }}"
-                               title="{{ item.title }}">{{ item.title }}</a>
-                        </li>
-                    {% endfor %}
-                </ul>
-            </nav>
-        {% endblock %}
-    </header>
 
-    <form action="{{ path('sulu_search.website_search') }}" method="GET">
-        <input name="q" type="text" placeholder="Search"/>
-        <input type="submit" value="Go"/>
-    </form>
-
-    <main>
-        {% block content %}{% endblock %}
-    </main>
-
-    <footer>
-        {% block footer %}
-            <p>Copyright {{ 'now'|date('Y') }} SULU</p>
-        {% endblock %}
-    </footer>
-
-    {% block javascripts %}
-        {{ encore_entry_script_tags('app') }}
-    {% endblock %}
+{% block javascripts %}
+    {{ encore_entry_script_tags('app') }}
+{% endblock %}
 </body>
 </html>

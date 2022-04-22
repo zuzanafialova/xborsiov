@@ -1,0 +1,11 @@
+nav {
+  display: grid;
+  grid-template-columns: 5rem auto 10rem 3rem;
+  padding: 1rem;
+  background: #6ac86b;
+
+  .menu {
+    display: flex;
+    justify-content: space-around;
+  }
+}
