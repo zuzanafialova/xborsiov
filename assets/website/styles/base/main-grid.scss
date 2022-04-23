@@ -1,15 +1,14 @@
 .main-grid {
   display: grid;
-  grid-template-columns: 30rem 4fr;
+  grid-template-columns: 20rem auto;
   grid-template-rows: auto;
   padding: 2rem;
   gap: 2rem;
-  height: 200vh;
 
   .side-bar {
     grid-column: 1/1;
   }
   .content{
-    background: #AAAAAA;
+
   }
 }

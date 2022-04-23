@@ -1,0 +1,78 @@
+.content {
+  background: white;
+
+  h1 {
+    max-width: 40rem;
+    margin: 1rem auto;
+
+  }
+
+  p {
+    max-width: 40rem;
+    margin: auto;
+    text-align: justify;
+    text-justify: inter-word;
+  }
+
+  img {
+    margin: 2rem auto .4rem;
+  }
+
+  .img-description {
+    font-style: italic;
+    text-align: center;
+  }
+
+  .tip {
+    border-radius: 10px;
+    padding: 1rem;
+    margin: 1rem auto;
+
+    &.lila {
+      background: transparentize($lila, .6);
+
+      &.outline {
+        background: white;
+        border: solid $lila 2px;
+      }
+    }
+
+    &.blau {
+      background: transparentize($blau, .6);
+
+      &.outline {
+        background: white;
+        border: solid $blau 2px;
+      }
+    }
+
+    &.rot {
+      background: transparentize($rot, .6);
+
+      &.outline {
+        background: white;
+        border: solid $rot 2px;
+      }
+    }
+
+    &.gelb {
+      background: transparentize($gelb, .6);
+
+      &.outline {
+        background: white;
+        border: solid $gelb 2px;
+      }
+    }
+
+    &.grun {
+      background: transparentize($grun, .6);
+
+      &.outline {
+        background: white;
+        border: solid $grun 2px;
+      }
+    }
+  }
+
+
+}

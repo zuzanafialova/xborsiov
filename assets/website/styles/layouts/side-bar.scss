@@ -2,21 +2,21 @@
   background: white;
   border-right: solid black 1px;
 
-  h4 {
-    border-bottom: solid #906090 0.5px;
-    display: inline-block;
-    padding: 0 1rem 0.6rem 0.6rem;
-    position: sticky;
-    top: 6rem;
-  }
+  .side-bar-list {
 
-  ul {
-    padding: .6rem;
+    h4 {
+      border-bottom: solid #906090 0.5px;
+      display: inline-block;
+      padding: 0 1rem 0.6rem 0.6rem;
+    }
 
-    li {
-      padding: .3rem;
+    ul {
+      padding: .6rem;
+
+      li {
+        padding: .3rem;
+      }
     }
   }
-
 
 }
