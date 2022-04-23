@@ -1,11 +1,60 @@
 nav {
   display: grid;
-  grid-template-columns: 5rem auto 10rem 3rem;
-  padding: 1rem;
-  background: #6ac86b;
+  grid-template-columns: 18rem auto 10rem 3rem;
+  border-bottom: solid #906090 1px;
+  position: sticky;
+  top: -3rem;
+  z-index: 20;
+
+  .nav-item {
+    padding: 5rem 1.5rem 0;
+    height: 9rem;
+    transition: all .3s;
+
+
+    &:hover {
+      padding-top: 5.5rem;
+      background: #90609088;
+    }
+  }
+
+  .logo {
+    color: #906090;
+
+    span {
+      font-size: 1.5rem;
+    }
+
+  }
 
   .menu {
     display: flex;
     justify-content: space-around;
+
+    a {
+
+      &:hover {
+
+        &.yellow {
+          background: yellow;
+        }
+
+        &.purple {
+          background: purple;
+        }
+
+        &.blue {
+          background: blue;
+        }
+      }
+    }
+  }
+
+  .phone {
+
+  }
+
+  .menu-toggle {
+
   }
 }
