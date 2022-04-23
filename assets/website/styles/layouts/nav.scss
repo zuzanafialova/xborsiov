@@ -5,6 +5,7 @@ nav {
   position: sticky;
   top: -3rem;
   z-index: 20;
+  background: white;
 
   .nav-item {
     padding: 5rem 1.5rem 0;
@@ -41,10 +42,12 @@ nav {
 
         &.purple {
           background: purple;
+          color: #ffffff;
         }
 
         &.blue {
-          background: blue;
+          background: #1010aa88;
+          color:#ffffff;
         }
       }
     }
