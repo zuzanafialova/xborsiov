@@ -17,6 +17,7 @@
     },
     "dependencies": {
         "file-loader": "^6.2.0",
+        "prismjs": "^1.28.0",
         "sass": "^1.49.9",
         "sass-loader": "^12.6.0"
     }

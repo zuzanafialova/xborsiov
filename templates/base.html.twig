@@ -19,33 +19,78 @@
     {% endblock %}
 </head>
 <body>
-    {% include 'layouts/nav.html.twig' %}
-    <div class="main-grid">
-        {% include 'layouts/side-bar.html.twig' %}
-        <div class="content">
-            <h1>Nadpis 1</h1>
-            <p>Stručný popis nástroje, který bude asi jeden odstavec, nejspíš kurzívou?</p>
-            <p>Odstavec postupu, klasický bez formátování. Jediné, co je potřeba nastavit je asi padding.</p>
-            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. In gravida lacus sit amet tellus sodales luctus. Vestibulum at venenatis eros. Proin vehicula ornare justo quis posuere. Nunc laoreet quis arcu vitae mattis. Etiam augue sem, rutrum in urna a, porttitor posuere magna. Curabitur erat lacus, ornare sed risus in, euismod molestie est. Vestibulum sed libero venenatis, dapibus urna eu, porttitor augue. Ut sed nulla luctus, pharetra sem sit amet, ultricies orci. Donec vel tellus eu est convallis facilisis. Proin convallis nisl ac odio vestibulum, sit amet imperdiet enim pretium. Etiam vitae nisl rutrum dui scelerisque mollis. </p>
-            <p class="tip gelb outline">Poznámky, tipy, které se můžou hodit, když chceš zefektivnit práci.</p>
-            <p class="tip gelb">Druhá možnost, jak může vypadat poznámka.</p>
-            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. In gravida lacus sit amet tellus sodales luctus. Vestibulum at venenatis eros. Proin vehicula ornare justo quis posuere. Nunc laoreet quis arcu vitae mattis. Etiam augue sem, rutrum in urna a, porttitor posuere magna. Curabitur erat lacus, ornare sed risus in, euismod molestie est. Vestibulum sed libero venenatis, dapibus urna eu, porttitor augue. Ut sed nulla luctus, pharetra sem sit amet, ultricies orci. Donec vel tellus eu est convallis facilisis. Proin convallis nisl ac odio vestibulum, sit amet imperdiet enim pretium. Etiam vitae nisl rutrum dui scelerisque mollis. </p>
-            <p class="tip blau outline">Poznámky, tipy, které se můžou hodit, když chceš zefektivnit práci.</p>
-            <p class="tip blau">Druhá možnost, jak může vypadat poznámka.</p>
-            <img src="http://o-0.cz/pravitko.png" alt="pravitko">
-            <p class="img-description">Pravítko</p>
-            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. In gravida lacus sit amet tellus sodales luctus. Vestibulum at venenatis eros. Proin vehicula ornare justo quis posuere. Nunc laoreet quis arcu vitae mattis. Etiam augue sem, rutrum in urna a, porttitor posuere magna. Curabitur erat lacus, ornare sed risus in, euismod molestie est. Vestibulum sed libero venenatis, dapibus urna eu, porttitor augue. Ut sed nulla luctus, pharetra sem sit amet, ultricies orci. Donec vel tellus eu est convallis facilisis. Proin convallis nisl ac odio vestibulum, sit amet imperdiet enim pretium. Etiam vitae nisl rutrum dui scelerisque mollis. </p>
-            <p class="tip rot outline">Poznámky, tipy, které se můžou hodit, když chceš zefektivnit práci.</p>
-            <p class="tip rot">Druhá možnost, jak může vypadat poznámka.</p>
-            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. In gravida lacus sit amet tellus sodales luctus. Vestibulum at venenatis eros. Proin vehicula ornare justo quis posuere. Nunc laoreet quis arcu vitae mattis. Etiam augue sem, rutrum in urna a, porttitor posuere magna. Curabitur erat lacus, ornare sed risus in, euismod molestie est. Vestibulum sed libero venenatis, dapibus urna eu, porttitor augue. Ut sed nulla luctus, pharetra sem sit amet, ultricies orci. Donec vel tellus eu est convallis facilisis. Proin convallis nisl ac odio vestibulum, sit amet imperdiet enim pretium. Etiam vitae nisl rutrum dui scelerisque mollis. </p>
-            <p class="tip lila outline">Poznámky, tipy, které se můžou hodit, když chceš zefektivnit práci.</p>
-            <p class="tip lila">Druhá možnost, jak může vypadat poznámka.</p>
-            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. In gravida lacus sit amet tellus sodales luctus. Vestibulum at venenatis eros. Proin vehicula ornare justo quis posuere. Nunc laoreet quis arcu vitae mattis. Etiam augue sem, rutrum in urna a, porttitor posuere magna. Curabitur erat lacus, ornare sed risus in, euismod molestie est. Vestibulum sed libero venenatis, dapibus urna eu, porttitor augue. Ut sed nulla luctus, pharetra sem sit amet, ultricies orci. Donec vel tellus eu est convallis facilisis. Proin convallis nisl ac odio vestibulum, sit amet imperdiet enim pretium. Etiam vitae nisl rutrum dui scelerisque mollis. </p>
-            <p class="tip grun outline">Poznámky, tipy, které se můžou hodit, když chceš zefektivnit práci.</p>
-            <p class="tip grun">Druhá možnost, jak může vypadat poznámka.</p>
+{% include 'layouts/nav.html.twig' %}
+<div class="main-grid">
+    {% include 'layouts/side-bar.html.twig' %}
+    <div class="content">
+        <div class="navigation">
+            <div class="btn primary">Previous</div>
+            <div class="btn primary outline">Next</div>
+            <div class="btn rot">Previous</div>
+            <div class="btn rot outline">Next</div>
+            <div class="btn lila">Previous</div>
+            <div class="btn lila outline">Next</div>
+            <div class="btn grun outline">Previous</div>
+            <div class="btn grun">Next</div>
+            <div class="btn blau outline">Previous</div>
+            <div class="btn blau">Next</div>
+            <div class="btn gelb outline">Previous</div>
+            <div class="btn gelb">Next</div>
+            <div class="btn">Disabled</div>
         </div>
+        <h1>Nadpis 1</h1>
+        <p>Stručný popis nástroje, který bude asi jeden odstavec, nejspíš kurzívou?</p>
+        <p>Odstavec postupu, klasický bez formátování. Jediné, co je potřeba nastavit je asi padding.</p>
+        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. In gravida lacus sit amet tellus sodales luctus.
+            Vestibulum at venenatis eros. Proin vehicula ornare justo quis posuere. Nunc laoreet quis arcu vitae mattis.
+            Etiam augue sem, rutrum in urna a, porttitor posuere magna. Curabitur erat lacus, ornare sed risus in,
+            euismod molestie est. Vestibulum sed libero venenatis, dapibus urna eu, porttitor augue. Ut sed nulla
+            luctus, pharetra sem sit amet, ultricies orci. Donec vel tellus eu est convallis facilisis. Proin convallis
+            nisl ac odio vestibulum, sit amet imperdiet enim pretium. Etiam vitae nisl rutrum dui scelerisque
+            mollis. </p>
+        <p class="tip gelb outline">Poznámky, tipy, které se můžou hodit, když chceš zefektivnit práci.</p>
+        <p class="tip gelb">Druhá možnost, jak může vypadat poznámka.</p>
+        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. In gravida lacus sit amet tellus sodales luctus.
+            Vestibulum at venenatis eros. Proin vehicula ornare justo quis posuere. Nunc laoreet quis arcu vitae mattis.
+            Etiam augue sem, rutrum in urna a, porttitor posuere magna. Curabitur erat lacus, ornare sed risus in,
+            euismod molestie est. Vestibulum sed libero venenatis, dapibus urna eu, porttitor augue. Ut sed nulla
+            luctus, pharetra sem sit amet, ultricies orci. Donec vel tellus eu est convallis facilisis. Proin convallis
+            nisl ac odio vestibulum, sit amet imperdiet enim pretium. Etiam vitae nisl rutrum dui scelerisque
+            mollis. </p>
+        <p class="tip blau outline">Poznámky, tipy, které se můžou hodit, když chceš zefektivnit práci.</p>
+        <p class="tip blau">Druhá možnost, jak může vypadat poznámka.</p>
+        <img src="http://o-0.cz/pravitko.png" alt="pravitko">
+        <p class="img-description">Pravítko</p>
+        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. In gravida lacus sit amet tellus sodales luctus.
+            Vestibulum at venenatis eros. Proin vehicula ornare justo quis posuere. Nunc laoreet quis arcu vitae mattis.
+            Etiam augue sem, rutrum in urna a, porttitor posuere magna. Curabitur erat lacus, ornare sed risus in,
+            euismod molestie est. Vestibulum sed libero venenatis, dapibus urna eu, porttitor augue. Ut sed nulla
+            luctus, pharetra sem sit amet, ultricies orci. Donec vel tellus eu est convallis facilisis. Proin convallis
+            nisl ac odio vestibulum, sit amet imperdiet enim pretium. Etiam vitae nisl rutrum dui scelerisque
+            mollis. </p>
+        <p class="tip rot outline">Poznámky, tipy, které se můžou hodit, když chceš zefektivnit práci.</p>
+        <p class="tip rot">Druhá možnost, jak může vypadat poznámka.</p>
+        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. In gravida lacus sit amet tellus sodales luctus.
+            Vestibulum at venenatis eros. Proin vehicula ornare justo quis posuere. Nunc laoreet quis arcu vitae mattis.
+            Etiam augue sem, rutrum in urna a, porttitor posuere magna. Curabitur erat lacus, ornare sed risus in,
+            euismod molestie est. Vestibulum sed libero venenatis, dapibus urna eu, porttitor augue. Ut sed nulla
+            luctus, pharetra sem sit amet, ultricies orci. Donec vel tellus eu est convallis facilisis. Proin convallis
+            nisl ac odio vestibulum, sit amet imperdiet enim pretium. Etiam vitae nisl rutrum dui scelerisque
+            mollis. </p>
+        <p class="tip lila outline">Poznámky, tipy, které se můžou hodit, když chceš zefektivnit práci.</p>
+        <p class="tip lila">Druhá možnost, jak může vypadat poznámka.</p>
+        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. In gravida lacus sit amet tellus sodales luctus.
+            Vestibulum at venenatis eros. Proin vehicula ornare justo quis posuere. Nunc laoreet quis arcu vitae mattis.
+            Etiam augue sem, rutrum in urna a, porttitor posuere magna. Curabitur erat lacus, ornare sed risus in,
+            euismod molestie est. Vestibulum sed libero venenatis, dapibus urna eu, porttitor augue. Ut sed nulla
+            luctus, pharetra sem sit amet, ultricies orci. Donec vel tellus eu est convallis facilisis. Proin convallis
+            nisl ac odio vestibulum, sit amet imperdiet enim pretium. Etiam vitae nisl rutrum dui scelerisque
+            mollis. </p>
+        <p class="tip grun outline">Poznámky, tipy, které se můžou hodit, když chceš zefektivnit práci.</p>
+        <p class="tip grun">Druhá možnost, jak může vypadat poznámka.</p>
     </div>
-    <div class="footer">Footer</div>
+</div>
+<div class="footer">Footer</div>
 
 
 {% block javascripts %}

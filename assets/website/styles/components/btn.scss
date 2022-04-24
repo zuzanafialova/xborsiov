@@ -1,0 +1,110 @@
+.btn {
+  display: inline-block;
+  background: #eeeeee;
+  padding: 1rem;
+  border-radius: 10px;
+  text-align: center;
+  margin: .5rem;
+  border: 1px solid #eeeeee;
+  transition: all .1s;
+  cursor: pointer;
+
+  &:hover {
+    border-width: 3px;
+    padding: calc(1rem - 2px);
+    box-shadow: 0 0 .5rem #00000044;
+    background: transparentize(#eeeeee, .1);
+  }
+
+  &.primary {
+    background: #222222;
+    color: white;
+    border-color: #222222;
+
+    &:hover {
+      background: transparentize(#222222, .1);
+    }
+
+    &.outline {
+      background: white;
+      color: #222222;
+    }
+  }
+
+
+  &.lila {
+    background: $lila;
+    color: white;
+    border-color: $lila;
+
+    &:hover {
+      background: transparentize($lila, .1);
+    }
+
+    &.outline {
+      background: white;
+      color: $lila;
+    }
+  }
+
+  &.rot {
+    background: $rot;
+    color: white;
+    border-color: $rot;
+
+    &:hover {
+      background: transparentize($rot, .1);
+    }
+
+    &.outline {
+      background: white;
+      color: $rot;
+    }
+  }
+
+  &.grun {
+    background: $grun;
+    color: white;
+    border-color: $grun;
+
+    &:hover {
+      background: transparentize($grun, .1);
+    }
+
+    &.outline {
+      background: white;
+      color: $grun;
+    }
+  }
+
+  &.blau {
+    background: $blau;
+    color: white;
+    border-color: $blau;
+
+    &:hover {
+      background: transparentize($blau, .1);
+    }
+
+    &.outline {
+      background: white;
+      color: $blau;
+    }
+  }
+
+  &.gelb {
+    background: $gelb;
+    border-color: $gelb;
+
+    &:hover {
+      background: transparentize($gelb, .1);
+    }
+
+    &.outline {
+      background: white;
+      color: #F57F17;
+    }
+  }
+
+
+}

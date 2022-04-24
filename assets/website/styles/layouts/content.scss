@@ -18,6 +18,16 @@
     margin: 2rem auto .4rem;
   }
 
+  .navigation {
+    max-width: 40rem;
+    margin: auto;
+    text-align: center;
+
+    .btn {
+      width: 7rem;
+    }
+  }
+
   .img-description {
     font-style: italic;
     text-align: center;
